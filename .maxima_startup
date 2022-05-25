@@ -1,0 +1,30 @@
+load("diag")$
+load("mactex-utilities")$
+/*load("vect")$*/
+
+hypsimp(x,M):= ratsimp(subst(x/%i,x,demoivre(subst(x*%i,x,M))));
+
+/*texput (nounify (transpose), lambda ([e], tex1 (first (e) ^ ' T)))$*/
+texput (nounify (transpose), "^T", postfix)$
+set_tex_environment_default(printf(false, "~%\\begin{equation}~%"), printf(false, "~%\\end{equation}~%"));
+
+
+matchdeclare(X, all) $
+matchdeclare(t, all) $
+tellsimp('diff('transpose(X),t), transpose(diff(X,t)));
+
+
+/*
+transpose_p(x) := not mapatom(x) and op(x)=nounify('transpose) and x=transpose(ddq)$
+
+transpose_dot(e) := subst("." = lambda([[s]], 
+if every('transpose_p, s) 
+    then 'transpose(xreduce(".",   reverse(map('first, s)))) 
+else funmake(".", s)),e)$
+*/
+/*
+dotassoc: true;
+*/
+transpose2(e, var) := subst("." = lambda([[s]], 
+transpose2_check: lambda ([x], not mapatom(x) and op(x)=nounify('transpose) and x=transpose(var)),
+if some('transpose2_check, s) then transpose(funmake(".", s)) else funmake(".", s)),e)$
