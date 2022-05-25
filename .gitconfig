@@ -1,0 +1,10 @@
+[core]
+	editor = nvim
+[merge]
+    tool = vimdiff
+[user]
+	useconfigonly = true
+    name = Alexander Sherikov
+    email = alexander@sherikov.net
+[pull]
+	ff = only

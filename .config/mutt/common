@@ -1,0 +1,77 @@
+set attribution="On %d, %n wrote:" # Quoting subject
+set forward_format="Fwd: %s"
+unset beep              # fuckin' noizy pc-speaker
+unset beep_new
+unset markers
+
+set pager_stop
+
+#set copy=yes
+set header=yes
+
+set ascii_chars=yes
+set allow_8bit			# never do Q-P encoding on legal 8-bit chars
+set arrow_cursor=no		# use -> instead of hiliting the whole line
+set autoedit			# go to the editor right away when composing
+#set charset="koi8-r"		# character set for your terminal
+set charset="utf-8"		# character set for your terminal
+set noconfirmappend		# don't ask me if i want to append to mailboxes
+set delete=yes			# purge deleted messages without asking
+set edit_headers		# let me edit the message header when composing
+set help			# show the help lines
+set include			# always include messages when replying
+set indent_string="> "		# how to quote replied text
+set nomark_old			# i don't care about whether a message is old
+set postponed="~/.postponed_msg"
+set record="/dev/null"
+
+set shell="/bin/tcsh"		# program to use for shell escapes
+#set send_charset="us-ascii:iso-8859-1:koi8-r"
+#set send_charset="koi8-r"
+set send_charset="utf-8"
+set editor="nvim -c 'set fo=tcrq' -c 'set tw=76' -c 'set syntax=mail'"
+
+# =?koi8-r?B?y8/E2V/P0MXSLnR4dA==?=
+set rfc2047_parameters=yes
+
+charset-hook windows-1251 cp1251
+set assumed_charset="iso-8859-1"
+
+auto_view text/html
+
+
+#
+# message headers
+#
+ignore *
+unignore Cc: Date: From: Reply-To: Subject: To: User-Agent:
+hdr_order From: Subject Date To Cc Reply-To User-Agent
+
+
+#
+# BINDINGS
+#
+bind index <Up> previous-entry
+bind index <Down> next-entry
+bind index { previous-unread
+bind index } next-unread
+bind pager <Right> next-entry
+bind pager <Left> previous-entry
+bind pager <Up> previous-line
+bind pager <Down> next-line
+bind pager { previous-unread
+bind pager } next-unread
+
+
+#
+# PAGER
+#
+#set pager_index_lines=5
+set pager_stop=yes
+
+
+#
+# SORTING
+#
+set sort=threads        #   sorting the mails in threads
+set sort_aux=date-sent  # sort brother mails inside threads

@@ -1,0 +1,48 @@
+alias ssh-vbox ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+alias scp-vbox scp -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -r
+
+alias less less -i
+alias rmaxima rmaxima --init-mac='~/.maxima_startup' --init-lisp='~/.maxima_startup.lisp'
+alias cp cp -v
+alias mv mv -v
+alias svn svnlite
+
+setenv EDITOR nvim
+setenv CVS_RSH ssh
+setenv LSCOLORS gxfxcxdxbxegedabagacad
+setenv LESSHISTFILE /dev/null
+setenv LESS -ir
+setenv XDG_CONFIG_HOME $HOME/.config
+setenv XDG_CACHE_HOME $HOME/.cache
+setenv XDG_DATA_HOME $HOME/.local/share
+#setenv G_BROKEN_FILENAMES 1
+#setenv G_FILENAME_ENCODING KOI8-R
+#setenv LD_LIBRARY_PATH "/usr/local/lib/gcc45/"
+#setenv CXX g++45
+
+set globdot
+set globstar
+set implicitcd
+set listflags=A
+#set complete=igncase
+
+set autolist
+set color
+set visiblebell
+set prompt = `whoami`" %T %?%# "
+set noding
+set nobeep
+
+alias ls ls -AFG
+alias gmake gmake -j5
+
+# CTRL + arrows
+bindkey "^[[1;5D" beginning-of-line
+bindkey "^[[1;5C" end-of-line
+
+setenv LC_TIME POSIX
+setenv LC_MESSAGES POSIX
+#setenv LESS    -ir
+setenv GCC_COLORS "error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01"
+
+setenv PATH "${PATH}:${HOME}/.local/bin"

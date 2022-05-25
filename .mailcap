@@ -1,0 +1,7 @@
+#text/html;      links %s; nametemplate=%s.html
+#text/html;      links -dump %s -codepage koi8-r; nametemplate=%s.html; copiousoutput
+#text/html;      html2text; nametemplate=%s.html; copiousoutput
+
+# view attachments (`v`), then press `m`
+text/html;      qutebrowser.sh %s &; test=test -n "$DISPLAY"; needsterminal; nametemplate=%s.html
+text/html;      lynx -assume_charset=%{charset} -dump %s; nametemplate=%s.html; copiousoutput
