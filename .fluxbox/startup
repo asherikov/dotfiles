@@ -31,21 +31,21 @@ OPT="-onroot -border black"
 ##
 ## Set background
 ##
-case $POWER_SAVE in
-    on) bsetroot -solid black;;
-    *)
-        IMG=`cd $WALLPAPERS; ls *.jpg *.gif | sort -R | head -n 1`;
-        OPTIONS=`grep $IMG $OPTIONS_FILE`;
-
-        if (test -z "$OPTIONS");
-        then
-            OPT="$OPT -fullscreen $WALLPAPERS/$IMG";
-        else
-            OPT="$OPT `echo "$OPTIONS" | cut -c 20-100` $WALLPAPERS/$IMG"
-        fi
-
-        echo "$OPT" | xargs $VIEWER ;;
-esac
+#case $POWER_SAVE in
+#    on) bsetroot -solid black;;
+#    *)
+#        IMG=`cd $WALLPAPERS; ls *.jpg *.gif | sort -R | head -n 1`;
+#        OPTIONS=`grep $IMG $OPTIONS_FILE`;
+#
+#        if (test -z "$OPTIONS");
+#        then
+#            OPT="$OPT -fullscreen $WALLPAPERS/$IMG";
+#        else
+#            OPT="$OPT `echo "$OPTIONS" | cut -c 20-100` $WALLPAPERS/$IMG"
+#        fi
+#
+#        echo "$OPT" | xargs $VIEWER ;;
+#esac
 
 
 ##
