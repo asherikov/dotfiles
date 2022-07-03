@@ -89,9 +89,9 @@ Mod4 e :Workspace 3
 Mod4 a :Workspace 4
 Mod4 s :Workspace 5
 Mod4 d :Workspace 6
-Mod4 F7 :Workspace 7
-Mod4 F8 :Workspace 8
-Mod4 F9 :Workspace 9
+Mod4 z :Workspace 7
+Mod4 x :Workspace 8
+Mod4 c :Workspace 9
 Mod4 F10 :Workspace 10
 Mod4 F11 :Workspace 11
 Mod4 F12 :Workspace 12
