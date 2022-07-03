@@ -134,6 +134,7 @@ Mod4 F12 :Workspace 12
 # open a dialog to run programs
 #Mod1 F2 :Exec fbrun
 Mod1 Control X :Exec ~/bin/qutebrowser.sh
+Mod1 Control F :Exec firefox
 #Mod1 Control T :Exec /usr/local/bin/koi8rxterm
 Mod1 Control T :Exec uxterm
 Pointer_Button1 :Exec xkbset mousekeys
