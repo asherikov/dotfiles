@@ -75,3 +75,6 @@ set pager_stop=yes
 #
 set sort=threads        #   sorting the mails in threads
 set sort_aux=date-sent  # sort brother mails inside threads
+
+
+set realname="Alexander Sherikov"
