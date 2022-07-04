@@ -1,0 +1,27 @@
+source .config/mutt/common
+
+set my_email=XXX_EMAIL_XXX
+set my_smtp_server=XXX_SMTP_XXX
+set my_imap_server=XXX_IMAP_XXX
+
+
+#
+# DEFAULT
+#
+set from="$my_email"
+set smtp_url="smtps://$my_email@$my_smtp_server/"
+set smtp_authenticators="login"
+set ssl_force_tls = yes
+
+
+#
+# MAILBOXES
+#
+#mailboxes `echo $HOME/mail/*`
+#set mbox_type="maildir"
+#set folder="$HOME/mail/"		# where i keep my mailboxes
+set spoolfile         = "imaps://$my_imap_server/INBOX"
+set folder            = "imaps://$my_imap_server"
+set imap_user         = "$my_email"
+
+set imap_keepalive    = 60
