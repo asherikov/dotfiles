@@ -5,7 +5,6 @@ alias less less -i
 alias rmaxima rmaxima --init-mac='~/.maxima_startup' --init-lisp='~/.maxima_startup.lisp'
 alias cp cp -v
 alias mv mv -v
-alias svn svnlite
 
 setenv EDITOR nvim
 setenv CVS_RSH ssh
