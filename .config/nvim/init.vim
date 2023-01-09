@@ -100,7 +100,7 @@
 "
 "
   " Don't use Ex mode, use Q for formatting
-  map Q gw
+  map q gw
 
   map <C-A> :set fo^=a<CR>
 
@@ -165,7 +165,7 @@
 
 
 
-com! -range CFMY :<line1>,<line2>!clang-format11 --style="{
+com! -range CFMY :<line1>,<line2>!clang-format-11 --style="{
             \    'BasedOnStyle': 'Google',
             \    'AccessModifierOffset': -4,
             \    'ConstructorInitializerIndentWidth': 2,
