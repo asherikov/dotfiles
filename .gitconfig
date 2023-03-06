@@ -8,3 +8,5 @@
     email = alexander@sherikov.net
 [pull]
 	ff = only
+[init]
+	defaultBranch = master
