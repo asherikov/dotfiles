@@ -875,7 +875,7 @@ c.content.headers.user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleW
 ## QtWebEngine, writing the clipboard as response to a user interaction
 ## is always allowed.
 ## Type: Bool
-c.content.javascript.can_access_clipboard = False
+c.content.javascript.clipboard = 'none'
 
 ## Allow JavaScript to close tabs.
 ## Type: Bool
@@ -1237,7 +1237,7 @@ c.downloads.remove_finished = 10000
 ## either a float value with a "pt" suffix, or an integer value with a
 ## "px" suffix.
 ## Type: String
-c.fonts.default_size = '14pt'
+c.fonts.default_size = '16pt'
 
 ## Font used for the downloadbar.
 ## Type: Font
@@ -1313,7 +1313,7 @@ c.fonts.default_size = '14pt'
 
 ## Hard minimum font size (in pixels).
 ## Type: Int
-# c.fonts.web.size.minimum = 0
+c.fonts.web.size.minimum = 16
 
 ## Minimum logical font size (in pixels) that is applied when zooming
 ## out.
@@ -1588,7 +1588,7 @@ c.new_instance_open_target = 'tab-bg'
 ##   - qt-quick: Tell Qt Quick to use a software renderer instead of OpenGL. (`QT_QUICK_BACKEND=software`)
 ##   - chromium: Tell Chromium to disable GPU support and use Skia software rendering instead. (`--disable-gpu`)
 ##   - none: Don't force software rendering.
-c.qt.force_software_rendering = 'qt-quick'
+#c.qt.force_software_rendering = 'qt-quick'
 
 ## Turn on Qt HighDPI scaling. This is equivalent to setting
 ## QT_AUTO_SCREEN_SCALE_FACTOR=1 or QT_ENABLE_HIGHDPI_SCALING=1 (Qt >=
