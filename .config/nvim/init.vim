@@ -22,6 +22,7 @@
   autocmd FileType c set omnifunc=ccomplete#Complete
 
   filetype plugin indent on
+  autocmd filetype yaml setlocal ts=4 sw=4 sts=0 expandtab
 
 
 " DOXYGEN
@@ -165,7 +166,7 @@
 
 
 
-com! -range CFMY :<line1>,<line2>!clang-format-11 --style="{
+com! -range CFMY :<line1>,<line2>!clang-format15 --style="{
             \    'BasedOnStyle': 'Google',
             \    'AccessModifierOffset': -4,
             \    'ConstructorInitializerIndentWidth': 2,
