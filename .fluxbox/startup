@@ -58,7 +58,8 @@ xrdb ~/.Xresources
 ## Exec xterm
 ##
 #koi8rxterm &
-uxterm &
+#uxterm &
+alacritty &
 
 
 ##
@@ -76,4 +77,8 @@ uxterm &
 #xkbset mousekeys
 xset -b
 
-exec fluxbox
+## tray
+tint2 &
+#battray &
+
+exec fluxbox -no-toolbar
