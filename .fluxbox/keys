@@ -133,7 +133,8 @@ Mod4 c :Workspace 9
 Mod1 Control X :Exec ~/bin/qutebrowser.sh
 Mod1 Control F :Exec firefox
 #Mod1 Control T :Exec /usr/local/bin/koi8rxterm
-Mod1 Control T :Exec uxterm
+#Mod1 Control T :Exec uxterm
+Mod1 Control T :Exec alacritty
 Pointer_Button1 :Exec xkbset mousekeys
 Pointer_Button2 :Exec xkbset mousekeys
 Pointer_Button3 :Exec xkbset mousekeys
