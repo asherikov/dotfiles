@@ -222,7 +222,7 @@ com! -range CFMY :<line1>,<line2>!clang-format15 --style="{
             \    'PointerAlignment': 'Right',
             \    'FixNamespaceComments': true,
             \    'IndentWrappedFunctionNames': true,
-            \    'Standard': 'Cpp03',
+            \    'Standard': 'Cpp11',
             \}"<CR>
 
 
