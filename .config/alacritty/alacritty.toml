@@ -2,7 +2,7 @@
 dimensions = { columns = 80, lines = 20 }
 
 [selection]
-semantic_escape_chars = ",│`|:\"' ()[]{}<>\t-/\\."
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t-/\\.!@#$%^&*+=;?"
 
 [[hints.enabled]]
 binding = { key = "U", mods = "Control|Shift" }
