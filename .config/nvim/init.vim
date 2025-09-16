@@ -108,7 +108,7 @@
   map <Up> gk
   map <Down> gj
   map <C-N> :noh<CR>
-  set pastetoggle=<M-1>
+"  set pastetoggle=<M-1>
   map <S-Up> <Nop>
   map <S-Down> <Nop>
   imap <S-Up> <Up>
@@ -124,7 +124,7 @@
 " ENCODINGS
   set fileencodings=utf-8,koi8-r,cp1251,ibm866
 "  set termencoding=koi8-r
-  set termencoding=utf-8
+"  set termencoding=utf-8
   map <S-F5> :set encoding=koi8-r<CR>
   map <S-F6> :set encoding=8bit-cp1251<CR>
   map <S-F7> :set encoding=8bit-cp866<CR>
@@ -167,62 +167,60 @@
 
 
 com! -range CFMY :<line1>,<line2>!clang-format15 --style="{
-            \    'BasedOnStyle': 'Google',
             \    'AccessModifierOffset': -4,
-            \    'ConstructorInitializerIndentWidth': 2,
             \    'AlignAfterOpenBracket': 'AlwaysBreak',
             \    'AlignEscapedNewlinesLeft': false,
             \    'AlignTrailingComments': true,
             \    'AllowAllParametersOfDeclarationOnNextLine': false,
+            \    'AllowShortFunctionsOnASingleLine': 'None',
             \    'AllowShortIfStatementsOnASingleLine': false,
             \    'AllowShortLoopsOnASingleLine': false,
-            \    'AllowShortFunctionsOnASingleLine': 'None',
-            \    'AllowShortLoopsOnASingleLine': false,
-            \    'AlwaysBreakTemplateDeclarations': true,
             \    'AlwaysBreakBeforeMultilineStrings': false,
+            \    'AlwaysBreakTemplateDeclarations': true,
+            \    'BasedOnStyle': 'Google',
+            \    'BinPackArguments': false,
+            \    'BinPackParameters': false,
             \    'BreakBeforeBinaryOperators': 'NonAssignment',
+            \    'BreakBeforeBraces': 'Allman',
             \    'BreakBeforeTernaryOperators': false,
             \    'BreakConstructorInitializersBeforeComma': true,
             \    'BreakStringLiterals': false,
-            \    'BinPackParameters': false,
-            \    'BinPackArguments': false,
-            \    'ColumnLimit':    120,
+            \    'ColumnLimit': 120,
             \    'ConstructorInitializerAllOnOneLineOrOnePerLine': true,
+            \    'ConstructorInitializerIndentWidth': 2,
+            \    'ContinuationIndentWidth': 8,
+            \    'Cpp11BracedListStyle': false,
+            \    'DerivePointerAlignment': false,
             \    'DerivePointerBinding': true,
             \    'ExperimentalAutoDetectBinPacking': false,
+            \    'FixNamespaceComments': true,
             \    'IndentCaseLabels': true,
+            \    'IndentFunctionDeclarationAfterType': false,
+            \    'IndentPPDirectives': 'AfterHash',
+            \    'IndentWidth': 4,
+            \    'IndentWrappedFunctionNames': true,
             \    'MaxEmptyLinesToKeep': 3,
             \    'NamespaceIndentation': 'All',
             \    'ObjCSpaceBeforeProtocolList': true,
             \    'PenaltyBreakBeforeFirstCallParameter': 19,
             \    'PenaltyBreakComment': 60,
-            \    'PenaltyBreakString': 1,
             \    'PenaltyBreakFirstLessLess': 1000,
+            \    'PenaltyBreakString': 1,
             \    'PenaltyExcessCharacter': 500,
             \    'PenaltyReturnTypeOnItsOwnLine': 1000,
+            \    'PointerAlignment': 'Right',
             \    'PointerBindsToType': false,
-            \    'SpacesBeforeTrailingComments': 2,
-            \    'Cpp11BracedListStyle': false,
-            \    'Standard':        'Auto',
-            \    'IndentWidth':     4,
-            \    'TabWidth':        4,
-            \    'UseTab':          'Never',
-            \    'BreakBeforeBraces': 'Allman',
-            \    'IndentFunctionDeclarationAfterType': false,
-            \    'SpacesInParentheses': false,
-            \    'SpacesInAngles':  false,
-            \    'SpaceInEmptyParentheses': false,
-            \    'SpacesInCStyleCastParentheses': false,
+            \    'SortIncludes': false,
             \    'SpaceAfterControlStatementKeyword': true,
             \    'SpaceBeforeAssignmentOperators': true,
-            \    'ContinuationIndentWidth': 8,
-            \    'SortIncludes': false,
-            \    'IndentPPDirectives': 'AfterHash',
-            \    'DerivePointerAlignment': false,
-            \    'PointerAlignment': 'Right',
-            \    'FixNamespaceComments': true,
-            \    'IndentWrappedFunctionNames': true,
+            \    'SpaceInEmptyParentheses': false,
+            \    'SpacesBeforeTrailingComments': 2,
+            \    'SpacesInAngles': false,
+            \    'SpacesInCStyleCastParentheses': false,
+            \    'SpacesInParentheses': false,
             \    'Standard': 'Cpp11',
+            \    'TabWidth': 4,
+            \    'UseTab': 'Never',
             \}"<CR>
 
 
