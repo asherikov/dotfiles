@@ -84,6 +84,7 @@
   let g:load_doxygen_syntax=1
   set background=dark
   highlight cComment ctermfg=darkgreen guifg=darkgreen
+  set inccommand=
 
 " TABULATION
   set tabstop=4
