@@ -2,7 +2,7 @@
 
 export LANG=en_EN.UTF-8
 
-/usr/local/bin/qutebrowser $@
+qutebrowser $@
 #${HOME}/.local/qutebrowser/.venv/bin/python3 -m qutebrowser "$@"
 
 # https://bugreports.qt.io/browse/QTBUG-62957

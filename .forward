@@ -1,1 +1,1 @@
-"|/usr/local/bin/procmail || exit 75"
+"|fdm fetch || exit 75"

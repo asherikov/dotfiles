@@ -9,4 +9,4 @@ find "$@" 	-iname "*.mp3" -print0 -or \
 			-iname "*.opus"  -print0 -or \
 			-iname "*.m4a"  -print0 -or \
 			-iname "*.ogg"  -print0 \
-	| sort -Rz | xargs -o -0 mpv --no-video
+	| shuf -z | xargs -o -0 mpv --no-video
