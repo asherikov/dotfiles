@@ -1,3 +1,3 @@
 #!/bin/sh
 
-youtube-dl -x --audio-quality 0 "$@"
+youtube-dl -x -t mp3 --audio-quality 0 "$@"

@@ -167,7 +167,7 @@
 
 
 
-com! -range CFMY :<line1>,<line2>!clang-format15 --style="{
+com! -range CFMY :<line1>,<line2>!clang-format --style="{
             \    'AccessModifierOffset': -4,
             \    'AlignAfterOpenBracket': 'AlwaysBreak',
             \    'AlignEscapedNewlinesLeft': false,
